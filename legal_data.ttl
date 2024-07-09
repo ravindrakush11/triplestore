@@ -1,0 +1,33 @@
+@prefix ns1: <http://www.estrellaproject.org/lkif-core/> .
+@prefix ns2: <http://data.europa.eu/eli/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/case1> ns1:appliesLaw <http://example.org/law1> ;
+    ns1:hasDate "2024-01-15"^^xsd:date ;
+    ns1:hasJudge <http://example.org/judge1> ;
+    ns1:hasStatus "Pending" ;
+    ns1:hasTitle "Case of John Doe vs State" .
+
+<http://example.org/judge1> ns1:hasName "Judge Judy" .
+
+<http://example.org/law1> ns2:date_publication "2020-05-22"^^xsd:date ;
+    ns2:section "Section 23A" ;
+    ns2:title "Law of Property" .
+
+
+@prefix lkif: <http://www.estrellaproject.org/lkif-core/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+
+<http://example.org/case1> lkif:hasTitle "Case of John Doe vs State" .
+<http://example.org/case1> lkif:hasDate "2024-01-15"^^xsd:date .
+<http://example.org/case1> lkif:hasStatus "Pending" .
+<http://example.org/case1> lkif:hasJudge <http://example.org/judge1> .
+
+<http://example.org/judge1> lkif:hasName "Judge Judy" .
+
+<http://example.org/law1> eli:title "Law of Property" .
+<http://example.org/law1> eli:section "Section 23A" .
+<http://example.org/law1> eli:date_publication "2020-05-22"^^xsd:date .
+
+<http://example.org/case1> lkif:appliesLaw <http://example.org/law1> .
+

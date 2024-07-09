@@ -1,0 +1,10 @@
+subject,predicate,object
+http://example.org/case1,http://www.estrellaproject.org/lkif-core/hasTitle,"Case of John Doe vs State"
+http://example.org/case1,http://www.estrellaproject.org/lkif-core/hasDate,"2024-01-15"
+http://example.org/case1,http://www.estrellaproject.org/lkif-core/hasStatus,"Pending"
+http://example.org/case1,http://www.estrellaproject.org/lkif-core/hasJudge,http://example.org/judge1
+http://example.org/judge1,http://www.estrellaproject.org/lkif-core/hasName,"Judge Judy"
+http://example.org/law1,http://data.europa.eu/eli/ontology#title,"Law of Property"
+http://example.org/law1,http://data.europa.eu/eli/ontology#section,"Section 23A"
+http://example.org/law1,http://data.europa.eu/eli/ontology#date_publication,"2020-05-22"
+http://example.org/case1,http://www.estrellaproject.org/lkif-core/appliesLaw,http://example.org/law1
